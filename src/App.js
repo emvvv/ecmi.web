@@ -7,6 +7,10 @@ import Messages from './components/pages/Messages';
 import About from './components/pages/About';
 import SignUp from './components/pages/SignUp';
 import Media from './components/pages/Media';
+import FastingSection from './components/fasting/FastingSection'
+import PrayerRequest from './components/fasting/PrayerRequest';
+
+
 
 function App() {
   return (
@@ -15,6 +19,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' exact element={<Home/>} />
+          <Route path='/fasting2023' exact element={<FastingSection/>} />
+          <Route path='/PrayerRequest' exact element={<PrayerRequest/>} />
           <Route path='/about' element={<About/>} />
           <Route path='/messages' element={<Messages/>} />
           <Route path='/sign-up' element={<SignUp/>} />

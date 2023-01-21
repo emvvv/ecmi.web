@@ -28,14 +28,14 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          <Link to='/fasting2023' className='navbar-logo' onClick={closeMobileMenu}>
             <img className='navbar-logo' src='/icons/ecmi-logo.png' width='100px' height='70px'></img>
            {/*put logo here*/}
           </Link>
-          <div className='menu-icon' onClick={handleClick}>
+          {/* <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-          </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          </div> */}
+          {/* <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                 Home
@@ -60,7 +60,7 @@ function Navbar() {
               </Link>
             </li>
 
-          </ul>
+          </ul> */}
    
         </div>
       </nav>

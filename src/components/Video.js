@@ -1,9 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import './Video.css';
+function Video() {
+    return (
+        <>
 
-function Video (){
-    return(
-<div className='video'>sample</div>
+             
+                
+                       
+                            <iframe className='iframe'
+                                src="https://www.youtube.com/embed/sxx661yAJwU"
+                                title="January 8 2023 Service"
+                                frameborder="0"
+                                allow="autoplay"
+                                allowfullscreen></iframe>
+                     
+               
+        
+
+        </>
     )
 
 }

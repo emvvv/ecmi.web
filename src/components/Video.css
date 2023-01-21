@@ -1,4 +1,17 @@
-.video {
-    text-align: center;
+.video-wrapper {
+  padding-bottom: 56.25%;
+  overflow:hidden;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 1120px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.iframe {
+  overflow: hidden;
+  width: 100%;
+  width: 80%;
 
 }
