@@ -1,0 +1,11 @@
+body {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  
+#root{
+    display: flexbox;
+    margin: 0;
+    padding: 0;
+}

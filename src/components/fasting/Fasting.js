@@ -1,12 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './FastingSection.css';
 
-
-
 function Fasting() {
-  let link = "https://www.youtube.com/embed/DBgPqgXsciM"
+  let link = "https://www.youtube.com/embed/g46FKXz9a0E"
   const [isMonday ,setisMonday] = useState(true);
   const [isTuesday, setisTuesday] = useState(false);
   const [isWednesday, setisWednesday] = useState(false);
@@ -17,41 +15,43 @@ function Fasting() {
 
   const[devotionVideo,setDevotionVideo] = useState(link);
 
-
   const monday = () => {
     clearButtons()
     setisMonday(true);
-    setDevotionVideo("https://www.youtube.com/embed/DBgPqgXsciM")
+    setDevotionVideo(link)
   };
   const tuesday = () => {
     clearButtons()
     setisTuesday(true);
-    setDevotionVideo("https://www.youtube.com/embed/s1nSR_twYj4")
+    setDevotionVideo("https://www.youtube.com/embed/0TD6XVNgnsQ")
   };
   const wednesday = () => {
     clearButtons()
     setisWednesday(true);
-    setDevotionVideo("https://www.youtube.com/embed/iAQ3AlP1BZg")
+
+    setDevotionVideo("https://www.youtube.com/embed/0mxOOzBvshE")
   };
   const thursday = () => {
     clearButtons()
     setisThursday(true);
-    setDevotionVideo("https://www.youtube.com/embed/0aeVHuXWTLM")
+    setDevotionVideo("https://www.youtube.com/embed/HzYu1VqpDC0")
   };
+
+  
   const friday = () => {
     clearButtons()
     setisFriday(true);
-    setDevotionVideo("https://www.youtube.com/embed/vr2RIxSpDZk")
+    setDevotionVideo("https://www.youtube.com/embed/AiR61QWmMow")
   };
   const saturday = () => {
     clearButtons()
     setisSaturday(true);
-    setDevotionVideo("https://www.youtube.com/embed/23f3LWVSGu4")
+     setDevotionVideo("https://www.youtube.com/embed/-dEegbVqXs0")
   };
   const sunday = () => {
     clearButtons()
     setisSunday(true);
-    setDevotionVideo("https://www.youtube.com/embed/IQzATr9rqQg")
+    setDevotionVideo("https://www.youtube.com/embed/zaUpevABK-k")
   };
   
 const clearButtons =()=>{
@@ -64,41 +64,44 @@ const clearButtons =()=>{
   setisSunday(false);
 };
 
+
+ 
   return (
     <>
       <img className='page-bg' src='/images/fasting2023/4kreso_bg_low_res.jpg' />
       <div className='f-hero-container'>
         <img className="title" src='/images/fasting2023/title_copy.png' />
+        <br />
+        <br />
         <h1>EMMANUEL IN ONE ACCORD</h1>
         <h2>A 7-DAY PRAYER AND FASTING</h2>
       </div>
 
       <div className='prayer-fasting-container '>
         <p className='p-center'>
-        &nbsp;&nbsp;&nbsp;&nbsp;As we face tremendous and extraordinary obstacles in knowing Christ, being like Him, and making Him known we are determined to pursue whatever it takes and whatever it costs us.
+        As we face tremendous and extraordinary obstacles in knowing Christ, being like Him, and making Him known we are determined to pursue whatever it takes and whatever it costs us.
         </p>
         <br />
         <br />
         <p className='p-center'>
-        &nbsp;&nbsp;&nbsp;&nbsp;The challenge of 2023 calls on every Emmanuelites to be united in prayer and fasting. This is the time of the year when we corporately consecrate ourselves, our families, and ministries to God. Believe God for victories and breakthroughs...
+        The challenge of 2023 calls on every Emmanuelites to be united in prayer and fasting. This is the time of the year when we corporately consecrate ourselves, our families, and ministries to God. Believe God for victories and breakthroughs...
         </p>
+
         <br />
         <br />
         <p className='p-center bold'>
-
           Now is the time to be an extraordinary Christian!
           <br />
           Now is the time to get involved!
           <br />
           Now is the time to pray for the Church!
           <br />
-
         </p>
-
         <br />
+
         <br />
         <p className='p-center'>
-        &nbsp;&nbsp;&nbsp;&nbsp;The Lord is ready to do great and amazing things for us this year. As we begin our 7 Days of Prayer & Fasting, believe in your heart and receive God’s answer. The Lord is ready to crown our year with bountiful harvest; even the hard pathways overflow with abundance.
+        The Lord is ready to do great and amazing things for us this year. As we begin our 7 Days of Prayer & Fasting, believe in your heart and receive God’s answer. The Lord is ready to crown our year with bountiful harvest; even the hard pathways overflow with abundance.
 
         </p>
         <br />
@@ -120,14 +123,13 @@ const clearButtons =()=>{
       <br />
       <br />
       <br />
-      <br />
       <div className='prayer-fasting-container '>
         <p className='p-left'>
           <br />
-          &nbsp;&nbsp;&nbsp;&nbsp;Fasting must always, first and  foremost, center on God. It must be about Him...
+          Fasting must always, first and  foremost, center on God. It must be about Him...
           <br />
           <br />
-          &nbsp;&nbsp;&nbsp;&nbsp;Why are you fasting? Ask the Holy Spirit to clarify His leading and objectives for your fasting. This will enable you to pray more specifically and str0tegically. Fasting is God-led and God-initiated. He fuels a desire to fast and pray. God loves it when we fast.
+          Why are you fasting? Ask the Holy Spirit to clarify His leading and objectives for your fasting. This will enable you to pray more specifically and strategically. Fasting is God-led and God-initiated. He fuels a desire to fast and pray. God loves it when we fast.
 
         </p>
       </div>
@@ -143,8 +145,7 @@ const clearButtons =()=>{
       <br />
       <div className='prayer-fasting-container '>
         <p className='p-left'>
-        &nbsp;&nbsp;&nbsp;&nbsp;Pray the kind of fast you should undertake. Before you fast decide the following:
-          <br />
+        Pray the kind of fast you should undertake. Before you fast decide the following:
           <br />
           <br />
           <ul>
@@ -166,7 +167,7 @@ const clearButtons =()=>{
           </ul>
           <br />
           <br />
-          &nbsp;&nbsp;&nbsp;&nbsp;Making these commitments ahead of time will help you sustain your fast when physical temptations and life's pressures tempt you to abandon it.
+         Making these commitments ahead of time will help you sustain your fast when physical temptations and life's pressures tempt you to abandon it.
           <br />
          
         </p>
@@ -180,11 +181,10 @@ const clearButtons =()=>{
       <br />
       <br />
       <br />
-      <br />
       <div className='prayer-fasting-container '>
 
         <p className='p-left'>
-        &nbsp;&nbsp;&nbsp;&nbsp;Fasting is not a spur-of-the-moment thing. It is planned. We must prepare. The very foundation of fasting and prayer is repentance. Unconfessed sin can hinder your prayers. There are several things you can do to prepare yourself.
+        Fasting is not a spur-of-the-moment thing. It is planned. We must prepare. The very foundation of fasting and prayer is repentance. Unconfessed sin can hinder your prayers. There are several things you can do to prepare yourself.
           <br />
           <br />
           <ul>
@@ -216,9 +216,9 @@ const clearButtons =()=>{
       <br />
       <br />
       <br />
+
       <br />
-      <br />
-      <a  href="https://drive.google.com/file/d/1nCT6Z-nwfNKN7Ozo8ljNUjcM6peESO_i/view?usp=sharing" target="_blank">
+      <a  href="https://bit.ly/ECMIPF2023" target="_blank">
       <button className='btn-wide'> DOWNLOAD THE COMPLETE ECMI FASTING 2023 GUIDE HERE  </button>
       </a>
       <br />
@@ -226,7 +226,7 @@ const clearButtons =()=>{
       <br />
       <br />
 
-      <h1 className='devotion-title'>MORNING WATCH DEVOTIONALS</h1>
+      <h1 className='section-header'>MORNING WATCH DEVOTIONALS</h1>
       <div className='fasting-video-wrapper'>
         <iframe
           src={`${devotionVideo}`}
@@ -234,19 +234,20 @@ const clearButtons =()=>{
           allowFullScreen />
       </div>
       <div className='btn-grp'>
-        <button  onClick ={monday} className={`btn-small ${(isMonday === false)? '' : 'btn-active' }`}>January 23</button>
-        <button  onClick ={tuesday} className={`btn-small ${(isTuesday === false)? '' : 'btn-active' }`}>January 24</button>
-        <button onClick ={wednesday}  className={`btn-small ${(isWednesday === false)? '' : 'btn-active' }`}>January 25</button>
-        <button  onClick ={thursday} className={`btn-small ${(isThursday === false)? '' : 'btn-active' }`}>January 26</button>
-        <button onClick ={friday}  className={`btn-small ${(isFriday === false)? '' : 'btn-active' }`}>January 27</button>
-        <button onClick ={saturday} className={`btn-small ${(isSaturday === false)? '' : 'btn-active' }`}>January 28</button>
-        <button  onClick ={sunday} className={`btn-small ${(isSunday === false)? '' : 'btn-active' }`}>January 29</button>
+        <button  onClick ={monday} className={`btn-small ${(isMonday === false)? '' : 'btn-active' }`}>JANUARY 23</button>
+        <button  onClick ={tuesday} className={`btn-small ${(isTuesday === false)? '' : 'btn-active' }`}>JANUARY 24</button>
+        <button onClick ={wednesday}  className={`btn-small ${(isWednesday === false)? '' : 'btn-active' }`}>JANUARY 25</button>
+
+        <button  onClick ={thursday} className={`btn-small ${(isThursday === false)? '' : 'btn-active' }`}>JANUARY 26</button>
+        <button onClick ={friday}  className={`btn-small ${(isFriday === false)? '' : 'btn-active' }`} >JANUARY 27</button>
+        <button onClick ={saturday} className={`btn-small ${(isSaturday === false)? '' : 'btn-active' }`}>JANUARY 28</button>
+        <button  onClick ={sunday} className={`btn-small ${(isSunday === false)? '' : 'btn-active' }`}>JANUARY 29</button>
       </div>
       <br />
       <br />
       <br />
       <br />
-      <h1 className='devotion-title'>SEND US YOUR PRAYER REQUEST</h1>
+      <h1 className='section-header'>SEND US YOUR PRAYER REQUEST</h1>
       <br />
       <br />
       <br />

@@ -28,8 +28,8 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/fasting2023' className='navbar-logo' onClick={closeMobileMenu}>
-            <img className='navbar-logo' src='/icons/ecmi-logo.png' width='100px' height='70px'></img>
+          <Link to='/fasting2024' className='navbar-logo' onClick={closeMobileMenu}>
+            <img className='navbar-logo' src='/images/fasting2024/ecmi-logo.png' width='100px' height='70px'></img>
            {/*put logo here*/}
           </Link>
           {/* <div className='menu-icon' onClick={handleClick}>

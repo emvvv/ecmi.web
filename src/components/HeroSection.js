@@ -2,31 +2,38 @@ import React from 'react';
 import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css';
+import { Link } from 'react-router-dom';
 
 function HeroSection() {
   return (
+    
     <div className='hero-container'>
-      <video src='/videos/video-1.mp4' autoPlay loop muted />
+              <img class="bg-cover" src='/images/new_bg.jpg' />
       <h1>Love God, Love People</h1>
       {/* <h2>Emmanuel In One Accord</h2> */}
 
-      {/* <div className='hero-btns'>
+      <div className='hero-btns'>
+      <Link to='/fasting2024' className='btn-mobile'>
         <Button
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          SUNDAY SCHEDULES
+          2024 Prayer and Fasting
         </Button>
-        <Button
+      </Link>
+    
+        <Link to='/volunteer' className='btn-mobile'>
+       <Button
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
           onClick={console.log('hey')}
         >
-          WATCH LATEST MESSAGE <i className='far fa-play-circle' />
+          JOIN THE MINISTRY<i className='far fa-play-circle' />
         </Button>
-      </div> */}
+        </Link>
+      </div> 
     </div>
   );
 }

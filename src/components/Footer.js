@@ -53,7 +53,7 @@ function Footer() {
             </a>
             <a
               className='social-icon-link instagram'
-              href='https://www.instagram.com/makati.ecmi/'
+              href='https://www.instagram.com/ecmi_makati/'
               target='_blank'
               rel="noopener noreferrer" 
               aria-label='Instagram'
@@ -62,7 +62,7 @@ function Footer() {
             </a>
             
               <a className='social-icon-link youtube'
-              href='https://www.youtube.com/@ecmimakati7349'
+              href='https://www.youtube.com/@ecmimakati'
               target='_blank'
               rel="noopener noreferrer" 
               aria-label='Youtube'>
