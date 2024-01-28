@@ -1,0 +1,27 @@
+
+.tiles-wrapper{
+    margin: 5%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    
+}
+
+.tile{
+    border-style: outset;
+    border: solid 2px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: azure;
+}
+
+.tile-image{
+
+}
+
+.tile-name{
+
+}
