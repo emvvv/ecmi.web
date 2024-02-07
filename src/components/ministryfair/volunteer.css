@@ -1,0 +1,47 @@
+.page-header{
+    text-align: center;
+    
+}
+/* Default styles for larger screens */
+.tiles-wrapper {
+    margin: 5%;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    border-radius: 20px 10px;
+    aspect-ratio: 1 / 0.85;
+}
+
+.tile {
+    border-style: outset;
+    border: solid 2px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: azure;
+    height: 220px; /* Adjust height as needed */
+}
+
+/* Media query for smaller screens, adjust as needed */
+@media screen and (max-width: 550px) {
+    .tiles-wrapper {
+        grid-template-columns: repeat(1, 1fr); /* Show only 1 tile */
+        grid-gap: 30px;
+        margin: 5%;
+    }
+
+    .tile {
+        padding: 20px;
+        height: 200px; /* Adjust height as needed */
+    }
+}
+
+.tile-image{
+
+}
+
+.tile-name{
+
+}

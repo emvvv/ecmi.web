@@ -8,8 +8,8 @@ import About from './components/pages/About';
 import Media from './components/pages/Media';
 import FastingSection from './components/fasting/FastingSection'
 import PrayerRequest from './components/fasting/PrayerRequest';
-import Volunteer from './components/ministry/Volunteer';
-import Signup from './components/ministry/Signup';
+import Volunteer from './components/ministryfair/Volunteer';
+import Signup from './components/ministryfair/Signup';
 
 
 
